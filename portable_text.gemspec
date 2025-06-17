@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["maxime@beaucouplus.com"]
   spec.summary = "A ruby renderer for Sanity Portable Text"
   spec.homepage = "https://github.com/beaucouplus/ruby_portable_text"
-  spec.required_ruby_version = ">= 3.0.0"
+  spec.required_ruby_version = ">= 3.2"
   spec.license = "MIT"
 
   # Specify which files should be added to the gem when it is released.
@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "activesupport", "~> 7.0"
+  spec.add_dependency "activesupport", "~> 8.0.2"
   spec.add_dependency "dry-configurable", "~> 1.0"
   spec.add_dependency "dry-inflector", "~> 1.0"
   spec.add_dependency "dry-initializer", "~> 3.1"
